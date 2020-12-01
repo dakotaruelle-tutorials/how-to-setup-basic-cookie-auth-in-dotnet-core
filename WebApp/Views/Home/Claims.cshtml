@@ -1,0 +1,8 @@
+<h1 style="margin-bottom: 20px">Claims</h1>
+@foreach (var claim in User.Claims)
+{
+  <div style="margin-bottom: 5px">
+    <b>@claim.Type: </b>
+    <span>@claim.Value</span>
+  </div>
+}
